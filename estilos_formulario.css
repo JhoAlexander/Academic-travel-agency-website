@@ -1,0 +1,63 @@
+/* Estilos para el formulario de reserva */
+.formulario-reserva {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.grupo-formulario {
+  margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #C4512C;
+}
+
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+  width: 97%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.grupo-formulario input:focus,
+.grupo-formulario select:focus,
+.grupo-formulario textarea:focus {
+  border-color: #FFD700;
+  outline: none;
+}
+
+.boton-reserva {
+  background-color: #C4512C;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.boton-reserva:hover {
+  background-color: #FFD700;
+}
+
+/* Estilo para el calendario */
+
+input[type="date"] {    /* Selecciona todos los elementos <input> cuyo tipo sea "date" */
+  appearance: none;     /* Elimina el estilo predeterminado del navegador para que se pueda personalizar completamente */
+  background: url('imagenes/salida.png') no-repeat 95% center;   /* Establece una imagen de fondo (icono de calendario), evita que se repita (no-repeat) y la posiciona en 95% del ancho (a la derecha) y centrada verticalmente */
+  background-size: 20px;   /* Ajusta el tamaño del icono de fondo a 20 píxeles (ancho y alto) */
+}

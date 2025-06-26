@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explora Hawai con Aloha Ohana Travels: playas paradisíacas, cultura local y turismo sostenible. ¡Reserva ahora paquetes familiares, románticos y de aventura!">
+    <link rel="icon" type="image/jpg" href="imagenes/logo_agencia.png"/>
+    <title>Viajes a Hawai | Paquetes turísticos y turismo sostenible - Aloha Ohana Travels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <style>/* Estilos para el menú hamburguesa */
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: #333;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+      }
+      
+      @media (max-width: 768px) {
+        .navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+          position: relative;
+        }
+        
+        .menu {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          z-index: 1000;
+        }
+        
+        .menu.active {
+          display: flex;
+        }
+        
+        .menu li {
+          padding: 10px 15px;
+          border-bottom: 1px solid #e83333;
+        }
+        
+        .menu-toggle {
+          display: block;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="contenido">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="imagenes/logo_agencia.png" alt="Logo" />
+        </div>
+
+        <!-- Menú hamburguesa -->
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Paquetes</a></li>
+          <li><a href="#sitios-turisticos">Sitios turísticos</a></li>
+          <li><a href="#ods-problematica">ODS Problemática</a></li>
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="http://alohatravels.free.nf/tienda/" target="_blank" rel="noopener noreferrer">Tienda</a></li>
+          <li><a href="https://aloha-travels.venndelo.com/" target="_blank" rel="noopener noreferrer">Venndelo</a></li>
+          <li><a href="formulario_reserva.html">Reservar</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="titulo-principal">Descubre el paraíso en Hawai</h1>
+      <h2 class="subtitulo">Playa, cultura, surfing y mucho más.</h2>
+      <h1 id="saludo"></h1>
+      <script src="app.js"></script>
+
+      <div class="contenedor-cajas">
+        <a href="paquetes.html#familiar" class="link-caja">
+          <div class="caja">
+            <h3>Paquete familiar</h3>
+            <img src="imagenes/familia.jpg" alt="Paquete familiar" class="imagen-paquete" />
+            <h3> Desde USD 8.291</h3>
+          </div>
+        </a>
+        <a href="paquetes.html#romantico" class="link-caja">
+          <div class="caja">
+            <h3>Paquete romántico</h3>
+            <img src="imagenes/Pareja.jpg" alt="Paquete romántico" class="imagen-paquete" />
+            <h3> Desde USD 8.694</h3>
+          </div>
+        </a>
+        <a href="paquetes.html#aventura" class="link-caja">
+          <div class="caja">
+            <h3>Paquete aventura</h3>
+            <img src="imagenes/aventura.jpg" alt="Paquete aventura" class="imagen-paquete" />
+            <h3> Desde USD 7.713</h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Sección Sitios Turísticos -->
+      <div class="seccion" id="sitios-turisticos">
+        <a href="sitios_turisticos.html" class="titulo-seccion">
+          <h2 class="titulo-seccion">Sitios turísticos</h2>
+        </a>
+        <div class="contenedor-destinos">
+          <a href="sitios_turisticos.html#waikiki" class="link-caja">
+            <div class="destino">
+              <img src="imagenes/Wakiki-Beach.jpg" alt="Waikiki Beach" />
+              <h3>Waikiki Beach</h3>
+              <p>Una de las playas más famosas de Hawai, ideal para surf y relax.</p>
+            </div>
+          </a>
+          <a href="sitios_turisticos.html#diamond-head" class="link-caja">
+            <div class="destino">
+              <img src="imagenes/diamond_head.jpg" alt="Diamond head" />
+              <h3>Diamond head</h3>
+              <p>Vistas panorámicas de Waikiki y la costa sur de Oahu.</p>
+            </div>
+          </a>
+          <a href="sitios_turisticos.html#waimea" class="link-caja">
+            <div class="destino">
+              <img src="imagenes/waimea.jpg" alt="Waimea" />
+              <h3>Parque estatal de Waimea Canyon</h3>
+              <p>Vistas espectaculares de un cañón de gran profundidad.</p>
+            </div>
+          </a>
+          <a href="sitios_turisticos.html#grove-farm" class="link-caja">
+            <div class="destino">
+              <img src="imagenes/museo.jpg" alt="museo" />
+              <h3>Museo Grove Farm Homestead</h3>
+              <p>Historia de las plantaciones de azúcar en la isla.</p>
+            </div>
+          </a>
+          <a href="sitios_turisticos.html#pearl-harbor" class="link-caja">
+            <div class="destino">
+              <img src="imagenes/pearl.jpg" alt="Pearl Harbor" />
+              <h3>Pearl Harbor</h3>
+              <p>Base naval histórica en la isla de Oahu.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sección ODS Problemática -->
+      <div class="seccion" id="ods-problematica">
+        <a href="problematica_ods.html" class="titulo-seccion">
+          <h2 class="titulo-seccion">ODS Problemática.</h2>
+        </a>
+        <div class="contenido-ods">
+          <h3 class="subtitulo-ods">ODS #11 Ciudades y comunidades sostenibles.<br>Falta de vivienda asequible.</h3>
+          <p class="descripcion-ods">El alto costo de vida y la escasez de terrenos en Hawai han provocado una crisis de vivienda. Muchas familias se ven obligadas a compartir viviendas, mudarse o dejar el estado.</p>
+          <div class="video-ods">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dnVH5MnJ-pY" title="Video sobre ODS 11" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección mapa -->
+    <div class="seccion-mapa" id="mapa">
+      <h2 class="titulo-mapa">Ubicación del paraíso de Hawai.</h2>
+      <div class="mapa-contenedor">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716615.3662529364!2d-161.3797226804819!3d20.795775045948288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7955089e27618cfb%3A0x7b01c8b4e6c295fa!2sHaw%C3%A1i%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1716837101931!5m2!1ses-419!2spe" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <footer class="footer" id="contacto">
+      <h2 class="footer-titulo">¡Contáctanos!</h2>
+      <div class="redes-sociales">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div style="text-align:center; margin-top: 15px;">
+        <a href="login.php" style="color: white;">Sesión administrador</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript menú hamburguesa -->
+   <script>
+      // JavaScript para el menú hamburguesa
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        
+        menuToggle.addEventListener('click', function() {
+          menu.classList.toggle('active');
+        });
+        
+        // Cerrar el menú al hacer clic en un enlace (opcional)
+        const menuLinks = document.querySelectorAll('.menu a');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            menu.classList.remove('active');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
