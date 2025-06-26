@@ -3,7 +3,7 @@ Academic website design for a programming bootcamp. Talento Tech - University of
 
 # 🌺 Aloha Ohana Travels
 
-Bienvenido a **Aloha Ohana Travels**, un sitio web turístico interactivo con enfoque en **viajes sostenibles a Hawái**. Este proyecto integra una interfaz amigable, conexión a base de datos y herramientas administrativas para gestionar reservas.
+Bienvenido a **Aloha Ohana Travels**, un sitio web turístico interactivo con enfoque en **viajes sostenibles a Hawai**. Este proyecto integra una interfaz amigable, conexión a base de datos y herramientas administrativas para gestionar reservas.
 
 ---
 
